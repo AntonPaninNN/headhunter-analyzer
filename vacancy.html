@@ -1,0 +1,11 @@
+<div>
+    <div id="vacancy-count">
+        <h2>Count: {{vacancyCount}}</h2>
+    </div>
+    <ul id="vacancy-list" ng-repeat="vacancy in vacancies">
+        <li>
+            <div id="vacancy-name"><a href="{{vacancy.alternate_url}}">Vacancy: {{vacancy.name}}</a></div>
+            <div id="vacancy-salary">Salary: {{calcSalary(vacancy);}}</div>
+        </li>
+    </ul>
+</div>

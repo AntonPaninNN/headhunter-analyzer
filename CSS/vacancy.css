@@ -1,0 +1,22 @@
+
+#body {
+    /*text-align: center;*/
+}
+
+#search-text-box {
+    width: 25%;
+}
+
+#result-list {
+    /*text-align: initial;*/
+}
+
+#vacancy-list {
+    /*display: table;
+    margin: 0 auto;*/
+}
+
+#vacancy-count {
+    margin-top: 10 px;
+    margin-bottom: 10 px;
+}

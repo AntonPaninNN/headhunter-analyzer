@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="vacancyApp">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/vacancy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="JS/vacancyController.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <div id="header">
+            <h1>Vacancy List:</h1>
+        </div>
+        <div id="app-body" ng-controller="vacancyController">
+            <div id="search">
+                <input id="search-text-box" type="text" name="searchTextBox" ng-model="searchData.searchText">
+                <input id="search-button" type="submit" value="Search" ng-click="getVacancies();">
+            </div>
+            <div ng-if="dataLoaded">
+                <div id="result-list" ng-include="'vacancy.html'"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
